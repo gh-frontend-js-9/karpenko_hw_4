@@ -1,0 +1,126 @@
+// Media adaptation
+@import './media/450'
+@import './media/550'
+@import './media/991'
+// Import all variables
+@import './variables'
+// Import font Montserrat
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap')
+// Page content
+@import './content/header'
+@import './content/main'
+@import './content/footer'
+
+// Remove list-style-type in list
+ul *
+    list-style-type: none
+
+// Flex settings
+*
+    word-break: break-word
+    line-height: 1.5
+    letter-spacing: .7px
+    word-spacing: .5px
+
+.d-flex
+    display: flex
+
+.flex-wrap
+    flex-wrap: wrap
+
+.flex-nowrap
+    flex-wrap: nowrap
+
+.justify-content-around
+    justify-content: space-around
+
+.justify-content-between
+    justify-content: space-between
+
+.justify-content-center
+    justify-content: center
+
+.rounded-button
+    font: 100%  $font-monserrat
+    color: $button-main-color
+    padding: .7rem 2rem
+    font-size: 1.15rem
+    border-radius: 1rem
+// Text-colors
+.text-white
+    color: #ffffff
+.text-violet
+    color: #8d81ac
+.text-second
+    color: #888
+.text-orange
+    color: #FF1C00
+.text-black
+    color: #000
+// Backgrounds
+.bg-violet
+    background-color: #8d81ac
+
+.bg-light
+    color: #ffffff
+.bg-transparent-dark
+    background:rgba(0,0,0, .8) !important
+// Text
+.font-weight-bold
+    font-weight: bolder
+// For headers in main sections
+%h0
+    font-size: 3rem
+    font-weight: 700
+    padding: 2rem 0
+    font-family: $font-monserrat
+    text-align: center
+
+
+.h0
+    @extend %h0;
+    color: #635c73
+.h0-white
+    @extend  %h0;
+    color: white
+
+.h0-gray
+    @extend %h0;
+    color: #999
+
+.h0-black
+    @extend %h0;
+    color: #000
+// Align
+.text-center
+    text-align: center
+
+// Transform
+.text-uppercase
+    text-transform: uppercase
+
+// Sizing
+.w-97-5
+    width: 97.5%
+    display: block
+    margin-left: auto
+    margin-right: auto
+.w-50
+    width: 50%
+.w-75
+    width: 75%
+.w-25
+    width: 25%
+    
+// HR
+%hr
+    margin: 1rem auto
+    background: #fff
+    display: block
+    border-radius: 1rem
+hr.light-bold
+    @extend %hr;
+    padding: .1rem 0 0 0
+hr.thin
+    @extend %hr;
